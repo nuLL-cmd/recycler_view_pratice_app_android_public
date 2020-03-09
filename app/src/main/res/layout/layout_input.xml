@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:id="@+id/rel_input">
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/edt_valor"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:gravity="start|center"
+            android:background="@drawable/background_edit"
+            android:layout_marginTop="20dp"
+            android:hint="Valor"
+            android:paddingStart="10dp" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_toEndOf="@id/edt_valor"
+            android:id="@+id/btn_ok"
+            android:layout_marginTop="20sp"
+            android:text="Ok"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="20sp"
+            android:background="@drawable/background_btn"
+            android:layout_toRightOf="@id/edt_valor"
+            android:layout_marginLeft="20sp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
